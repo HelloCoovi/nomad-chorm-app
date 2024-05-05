@@ -3,33 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
     <title>Document</title>
   </head>
   <body>
     <header>
       <div>
-        <p class="user-weather">인천</p>
-        <p class="user-location">20도</p>
+        <p class="user-weather">유저 날씨</p>
+        <p class="user-location">유저 위치</p>
       </div>
+      <form id="login-form">
+        <input class="user-id" type="text" />
+        <input class="user-pw" type="text" />
+        <button type="submit">로그인</button>
+      </form>
     </header>
     <main>
-      <p class="clock">dkssud</p>
-      <h3>Hello Coovi</h3>
+      <p class="clock">00:00</p>
+      <h3 class="greeting hidden">Hello Coovi</h3>
       <section>
         <form id="todo-form">
           <input type="text" placeholder="할일을 입력하고 Enter를 누르세요" />
         </form>
-        <ul class="todo-list">
-          <li>
-            TODO1
-            <button class="delete">❌</button>
-          </li>
-        </ul>
+        <ul id="todo-list"></ul>
       </section>
+      <img class="" src="./img/0.jpeg" />
     </main>
 
-    <script src="./js/getLocation.js"></script>
+    <script src="./js/getUserLocationData.js"></script>
     <script src="./js/timer.js"></script>
-    <script src="./js/weather.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/randomImg.js"></script>
   </body>
 </html>
